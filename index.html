@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mezcla a Distancia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    letterSpacing: {
+                        widest2: '.35em',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white antialiased">
+
+    <!-- HERO -->
+    <section
+        class="relative min-h-screen flex items-center justify-center text-center px-6 bg-cover bg-center"
+        style="background-image: url('assets/images/hero-studio.png');"
+    >
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black"></div>
+
+        <div class="relative max-w-3xl">
+            <p class="text-xs tracking-widest2 uppercase text-gray-400 mb-6">
+                Servicio de mezcla profesional
+            </p>
+
+            <h1 class="text-5xl md:text-6xl font-semibold mb-8 leading-tight">
+                Mezcla Profesional<br />a Distancia
+            </h1>
+
+            <p class="text-gray-300 text-lg mb-12 leading-relaxed">
+                Llevá tu música al siguiente nivel con un proceso de mezcla profesional,
+                diseñado para respetar tu identidad sonora.
+            </p>
+
+            <a
+                href="#contact"
+                class="inline-block border border-white/70 px-10 py-4 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition duration-300"
+            >
+                Iniciar tu proyecto
+            </a>
+        </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section class="py-28 bg-neutral-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-semibold text-center mb-20">
+                Cómo funciona
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <div class="space-y-4">
+                    <span class="text-sm text-gray-500 tracking-widest uppercase">Paso 1</span>
+                    <h3 class="text-xl font-medium">Subí tus pistas</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Enviá tus stems o pistas multipista de forma online y segura.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <span class="text-sm text-gray-500 tracking-widest uppercase">Paso 2</span>
+                    <h3 class="text-xl font-medium">Proceso de mezcla</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Ingenieros con experiencia trabajan tu música con criterios técnicos y artísticos.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <span class="text-sm text-gray-500 tracking-widest uppercase">Paso 3</span>
+                    <h3 class="text-xl font-medium">Entrega final</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Recibís tu mezcla final y podés solicitar ajustes para alcanzar el resultado ideal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="py-28 bg-black">
+        <div class="max-w-xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-semibold mb-10 text-center">
+                Iniciemos una conversación
+            </h2>
+
+            <form class="space-y-6">
+                <input
+                    class="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-md focus:outline-none focus:border-white/60"
+                    placeholder="Nombre"
+                />
+                <input
+                    class="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-md focus:outline-none focus:border-white/60"
+                    placeholder="Correo electrónico"
+                />
+                <textarea
+                    rows="5"
+                    class="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-md focus:outline-none focus:border-white/60"
+                    placeholder="Contanos sobre tu proyecto"
+                ></textarea>
+
+                <button
+                    type="button"
+                    class="w-full border border-white/70 py-4 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition duration-300"
+                >
+                    Enviar mensaje
+                </button>
+            </form>
+
+            <p class="text-xs text-gray-500 mt-6 text-center">
+                (Formulario aún no conectado — versión de demostración)
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 text-center text-gray-600 text-xs tracking-widest uppercase">
+        Interfaz de demostración — integración de backend próximamente
+    </footer>
+
+</body>
+</html>
