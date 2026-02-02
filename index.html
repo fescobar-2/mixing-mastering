@@ -25,10 +25,8 @@
 <body class="bg-black text-white antialiased">
 
     <!-- HERO -->
-    <section
-        class="relative min-h-screen flex items-center justify-center text-center px-6 bg-cover bg-center"
-        style="background-image: url('assets/images/hero-studio.png');"
-    >
+    <section class="relative min-h-screen flex items-center justify-center text-center px-6 bg-cover bg-center"
+        style="background-image: url('assets/images/hero-studio.png');">
         <!-- Overlay -->
         <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black"></div>
 
@@ -46,10 +44,8 @@
                 diseñado para respetar tu identidad sonora.
             </p>
 
-            <a
-                href="#contact"
-                class="inline-block border border-white/70 px-10 py-4 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition duration-300"
-            >
+            <a href="#contact"
+                class="inline-block border border-white/70 px-10 py-4 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition duration-300">
                 Iniciar tu proyecto
             </a>
         </div>
@@ -90,32 +86,93 @@
         </div>
     </section>
 
+    <!-- ANTES Y DESPUÉS DE MEZCLA -->
+    <section class="py-28 bg-neutral-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-semibold text-center mb-16">
+                Antes y Después de la Mezcla
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="space-y-4 text-center">
+                    <p class="uppercase text-sm tracking-widest text-gray-500">Antes</p>
+                    <img src="assets/images/play-button.png" alt="Antes de la mezcla" class="rounded-lg shadow-lg">
+                </div>
+                <div class="space-y-4 text-center">
+                    <p class="uppercase text-sm tracking-widest text-gray-500">Después</p>
+                    <img src="assets/images/play-button.png" alt="Después de la mezcla" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section class="py-28 bg-neutral-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-semibold text-center mb-16">
+                Planes y Precios
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Mezcla Básica -->
+                <div
+                    class="bg-gradient-to-br from-neutral-900 to-neutral-800 rounded-2xl p-8 shadow-lg hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Mezcla Básica</h3>
+                    <p class="text-sm text-gray-400 mb-6">Ideal para demos o maquetas. Hasta 10 pistas.</p>
+                    <p class="text-3xl font-bold text-white mb-6">$50 <span class="text-sm font-medium">USD</span></p>
+                    <button
+                        class="w-full py-3 bg-white text-black rounded-md font-semibold tracking-widest uppercase text-sm hover:bg-opacity-90 transition">
+                        Seleccionar
+                    </button>
+                </div>
+
+                <!-- Mezcla Pro -->
+                <div
+                    class="bg-gradient-to-br from-neutral-900 to-neutral-800 rounded-2xl p-8 shadow-lg border border-white/10 scale-105">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Mezcla Pro</h3>
+                    <p class="text-sm text-gray-400 mb-6">Para lanzamientos profesionales. Hasta 40 pistas.</p>
+                    <p class="text-3xl font-bold text-white mb-6">$120 <span class="text-sm font-medium">USD</span></p>
+                    <button
+                        class="w-full py-3 bg-white text-black rounded-md font-semibold tracking-widest uppercase text-sm hover:bg-opacity-90 transition">
+                        Seleccionar
+                    </button>
+                </div>
+
+                <!-- Mastering -->
+                <div
+                    class="bg-gradient-to-br from-neutral-900 to-neutral-800 rounded-2xl p-8 shadow-lg hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Mastering</h3>
+                    <p class="text-sm text-gray-400 mb-6">Mastering digital con optimización para plataformas.</p>
+                    <p class="text-3xl font-bold text-white mb-6">$40 <span class="text-sm font-medium">USD</span></p>
+                    <button
+                        class="w-full py-3 bg-white text-black rounded-md font-semibold tracking-widest uppercase text-sm hover:bg-opacity-90 transition">
+                        Seleccionar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CONTACTO -->
     <section id="contact" class="py-28 bg-black">
         <div class="max-w-xl mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-semibold mb-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-semibold mb-12 text-center">
                 Iniciemos una conversación
             </h2>
 
-            <form class="space-y-6">
+            <form class="space-y-6 bg-neutral-900 p-8 rounded-2xl shadow-xl">
                 <input
-                    class="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-md focus:outline-none focus:border-white/60"
-                    placeholder="Nombre"
-                />
+                    class="w-full p-4 bg-neutral-800 border border-neutral-700 rounded-md placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-white/40 transition"
+                    placeholder="Nombre" />
                 <input
-                    class="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-md focus:outline-none focus:border-white/60"
-                    placeholder="Correo electrónico"
-                />
-                <textarea
-                    rows="5"
-                    class="w-full p-4 bg-neutral-900 border border-neutral-800 rounded-md focus:outline-none focus:border-white/60"
-                    placeholder="Contanos sobre tu proyecto"
-                ></textarea>
+                    class="w-full p-4 bg-neutral-800 border border-neutral-700 rounded-md placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-white/40 transition"
+                    placeholder="Correo electrónico" />
+                <textarea rows="5"
+                    class="w-full p-4 bg-neutral-800 border border-neutral-700 rounded-md placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-white/40 transition"
+                    placeholder="Contanos sobre tu proyecto"></textarea>
 
-                <button
-                    type="button"
-                    class="w-full border border-white/70 py-4 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition duration-300"
-                >
+                <button type="button"
+                    class="w-full py-4 bg-white text-black rounded-md font-semibold text-sm uppercase tracking-widest hover:bg-opacity-90 transition">
                     Enviar mensaje
                 </button>
             </form>
@@ -126,10 +183,12 @@
         </div>
     </section>
 
+
     <!-- FOOTER -->
     <footer class="py-10 text-center text-gray-600 text-xs tracking-widest uppercase">
         Interfaz de demostración — integración de backend próximamente
     </footer>
 
 </body>
+
 </html>
